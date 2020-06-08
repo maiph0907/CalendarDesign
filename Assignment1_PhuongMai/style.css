@@ -1,0 +1,64 @@
+/* Name: Phuong Mai
+   Student ID: 991529666
+   Email: maiph@sheridancollege.ca
+   Date: June 1st, 2020
+   Description:     + A web application that display a monthly calendar of the current month using javaScript, HTML and CSS.
+                    + CSS file contains styling for gridParents, gridItems and other styling.
+*/
+
+/*-------------------------------------------------------------grid styling------------------------------------------------------------- */
+#weekDaysGridParent{
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekDayGridItem {
+    font-weight: 700;
+    font-size: calc(1em + 1vw);
+    background-color: #45c2c8;
+}
+
+#dateGridParent {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(7, 1fr);
+    padding-top:10px;
+    padding-bottom: 5%;
+}
+
+.dateGridItem {
+    height: 10vw;
+    min-height:50px;
+    max-height: 150px;
+    font-size: calc(1em + 1vw);
+    padding-left: 10%;
+}
+
+.datePreMonth {
+    background-color: #f2f2f2;
+    color: #968989;
+}
+
+.dateCurrentMonth {
+    background-color: #ecdede;
+    font-weight: 700;;
+}
+
+.dateNextMonth {
+    background-color: #f2f2f2;
+    color: #968989;
+}
+
+/* --------------------------------------------------page styling------------------------------------------------------------------------- */
+#currentMonth {
+    text-align: center;
+    font-weight: 700;
+    font-size: calc(1em + 2vw);
+    padding: 3%;
+}
+
+body {
+    padding: 0 5%;
+}
